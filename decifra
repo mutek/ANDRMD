@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+#
+#
+
+[ -z $1 ] && echo "uso: "$0" FILE_INPUT" && exit 1
+
+FILE_INPUT=$1
+
+## DECIFRA
+gpg --output ANDRMD.tar.bz2 --decrypt ANDRMD.tar.bz2.gpg-aes256
